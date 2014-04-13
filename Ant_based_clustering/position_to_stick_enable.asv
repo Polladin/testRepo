@@ -1,0 +1,18 @@
+function [ enable ] = position_to_stick_enable( dataStick, position, grid, dataOnLattice )
+
+    enable = 0;
+    neighborSize = 1;
+    
+    Xbase = dataOnLattice(dataNum,1);
+    Ybase = dataOnLattice(dataNum,2);
+    
+    x = 
+    y =
+    if( Xbase+x > 0 && Ybase+y > 0 && Xbase+x <= lengt(grid) && Ybase+y <= lengt(grid) )
+        if( grid(Xbase+x, Ybase+y) ~= 0 && x ~= 0 && y ~= 0 )
+            evaluate_value = evaluate_value + distanceMatrix( dataNum, grid(Xbase+x, Ybase+y) );
+        end
+    end      
+
+end
+

@@ -1,0 +1,8 @@
+function [ dataNum ] = get_randomly_data( pheromone_table )
+
+    pheromone_table = pheromone_table ./ summ(pheromone_table(:));
+    
+    
+
+end
+
